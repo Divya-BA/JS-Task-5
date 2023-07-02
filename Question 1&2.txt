@@ -37,6 +37,7 @@ employee.forEach((a)=>
 --------------------------------------------------------
 2)Create your own resume in JSON format
 Answer:
+var resume=
 {
 "personaldetails":
 {

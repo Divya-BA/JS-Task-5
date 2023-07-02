@@ -1,0 +1,146 @@
+1)for a given JSON iterate over all for loops
+var employee=[{"Name":"Hari",
+         "age":"23",
+         "email":"hari@gmail.com",
+         "salary":"7000$"},
+         
+         {"Name":"raju",
+         "age":"21",
+         "email":"raju@gmail.com",
+         "salary":"2000$"},
+         
+         {"Name":"ramu",
+         "age":"22",
+         "email":"ramu@gmail.com",
+         "salary":"4000$"}];
+//For loop
+for(var i=0;i<employee.length;i++)
+{
+  console.log(employee[i]);
+}
+//For in loop
+for(var key in employee)
+{
+  console.log(employee[key]);
+}
+//for of loop
+for(var n of employee)
+{
+  console.log(n);
+}
+//forEach() method
+employee.forEach((a)=>
+{
+  console.log(a);
+});
+
+--------------------------------------------------------
+2)Create your own resume in JSON format
+Answer:
+{
+"personaldetails":
+{
+"name":"Divya BA",
+"address":"No 9,Bharathiyar 2nd street, choolai pallam, MGR nagar",
+"city":"chennai",
+"pincode":600078,
+"contactnumber":9941809779,
+"email":"divyaanbalagan28@gmail.com"
+},
+"degree":
+{
+"course":"Bsc",
+"nameofcollege":"Meenakshi college for women",
+"percentage":83,
+"year":2023
+},
+"12th":
+{
+"course":"computer science",
+"nameofschool":"all angles mat hr sec school",
+"percentage":79,
+"year":2020
+},
+"10th":
+{
+"nameofschool":"all angles mat hr sec school",
+"percentage":83,
+"year":2018
+},
+"skills":
+{
+"programming":"c,c++,python",
+"database":"SQL",
+"markuplanguage":"HTML"
+},
+"certification":
+{
+"first":"Barclays life skill programme conducted by GTT foundation",
+"second":"Advanced programme in C language by Bharathiyar university- CCII",
+"third":"Front end development -HTML by Great Learning Academy",
+"forth":"Front end development-CSS by Great Learning Academy"
+},
+"project":
+{
+"name":"Smart keychain"
+},
+"workshop":
+{
+"topic":"Kaizen IOT Workshop "
+},
+"seminar":
+{
+"topic":"Aritificial intellegence",
+"subtopic":"Agricultural"
+}
+}
+
+
+var personaldetails={name:"Divya BA",
+address:"No 9,Bharathiyar 2nd street, choolai pallam, MGR nagar",
+city:"chennai",
+pincode:600078,
+contactnumber:9941809779,
+email:"divyaanbalagan28@gmail.com"};
+var EducationDegree={course:"Bsc",
+nameofcollege:"Meenakshi college for women",
+percentage:83,
+year:2020-2023};
+var EducationHSL={course:"computer science",
+nameofschool:"all angles mat hr sec school",
+percentage:79,
+year:2019-2020};
+var educationSSCL={nameofschool:"all angles mat hr sec school",
+percentage:83,
+year:2017-2018};
+var skills={programming:"c,c++,python",
+database:"SQL",
+markuplanguage:"HTML"};
+var certification={first:"Barclays life skill programme conducted by GTT foundation",
+second:"Advanced programme in C language by Bharathiyar university- CCII",
+third:"Front end development -HTML by Great Learning Academy",
+forth:"Front end development-CSS by Great Learning Academy",
+}
+var project={name:"Smart keychain"};
+var workshop={topic:"Kaizen IOT Workshop "};
+var seminar={topic:"Aritificial intellegence",subtopic:"Agricultural"};
+
+//object into JSON
+var json=JSON.stringify(personaldetails);
+console.log(json);
+var json8=JSON.stringify(EducationDegree);
+console.log(json8);
+var json1=JSON.stringify(EducationHSL);
+console.log(json1);
+var json2=JSON.stringify(educationSSCL);
+console.log(json2);
+var json3=JSON.stringify(skills);
+console.log(json3);
+var json4=JSON.stringify(certification);
+console.log(json4);
+var json5=JSON.stringify(project);
+console.log(json5);
+var json6=JSON.stringify(workshop);
+console.log(json6);
+var json7=JSON.stringify(seminar);
+console.log(json7);
